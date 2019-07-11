@@ -319,9 +319,6 @@ sys.vendor.shutdown.waittime=500
 ro.soc.manufacturer=QTI
 ro.soc.model=SM7325
 
-# SSR
-persist.vendor.ssr.restart_level=ALL_ENABLE
-
 # Stagefright
 debug.stagefright.c2inputsurface=-1
 
