@@ -90,7 +90,7 @@ vendor.audio.feature.hifi_audio.enable=false
 vendor.audio.feature.hwdep_cal.enable=false
 vendor.audio.feature.incall_music.enable=true
 vendor.audio.feature.keep_alive.enable=true
-vendor.audio.feature.kpi_optimize.enable=true
+vendor.audio.feature.kpi_optimize.enable=false
 vendor.audio.feature.maxx_audio.enable=false
 vendor.audio.feature.multi_voice_session.enable=true
 vendor.audio.feature.power_mode.enable=true
@@ -253,10 +253,6 @@ media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 # NFC
 ro.nfc.port=I2C
-
-# Perf
-ro.vendor.extension_library=libqti-perfd-client.so
-ro.vendor.perf-hal.ver=2.2
 
 # QSPM
 ro.vendor.qspm.enable=true
