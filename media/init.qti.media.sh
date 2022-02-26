@@ -2,7 +2,7 @@
 #==============================================================================
 #       init.qti.media.sh
 #
-# Copyright (c) 2020-2021, Qualcomm Technologies, Inc.
+# Copyright (c) 2020-2022, Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
@@ -50,7 +50,7 @@ case "$target" in
         case "$soc_hwid" in
             475|515)
                 setprop vendor.media.target_variant "_yupik_v0"
-                if [ $build_codename -le "12" ]; then
+                if [ $build_codename -le "13" ]; then
                     setprop vendor.netflix.bsp_rev "Q7325-SPY-33758-1"
                 fi
                 sku_ver=`cat /sys/devices/platform/soc/aa00000.qcom,vidc/sku_version` 2> /dev/null
@@ -60,7 +60,7 @@ case "$target" in
                 ;;
             450)
                 setprop vendor.media.target_variant "_shima_v3"
-                if [ $build_codename -le "12" ]; then
+                if [ $build_codename -le "13" ]; then
                     setprop vendor.netflix.bsp_rev "Q875-32774-1"
                 fi
                 sku_ver=`cat /sys/devices/platform/soc/aa00000.qcom,vidc/sku_version` 2> /dev/null
@@ -70,7 +70,7 @@ case "$target" in
                     setprop vendor.media.target_variant "_shima_v2"
                 fi
                 ;;
-            497|498)
+            497|498|575|576)
                     setprop vendor.media.target_variant "_yupik_iot"
                 ;;
             *)
@@ -79,7 +79,7 @@ case "$target" in
                 else
                     setprop vendor.media.target_variant "_lahaina"
                 fi
-                if [ $build_codename -le "12" ]; then
+                if [ $build_codename -le "13" ]; then
                     setprop vendor.netflix.bsp_rev "Q875-32408-1"
                 fi
                 ;;
@@ -87,15 +87,18 @@ case "$target" in
         ;;
     "holi")
         case "$soc_hwid" in
-            507)
+            507|565)
                 setprop vendor.media.target_variant "_blair"
-                if [ $build_codename -le "12" ]; then
+                if [ $build_codename -le "13" ]; then
                     setprop vendor.netflix.bsp_rev "Q4350-32962-1"
                 fi
                 ;;
+            578)
+                setprop vendor.media.target_variant "_blair_lite"
+                ;;
             454|472)
                 setprop vendor.media.target_variant "_holi"
-                if [ $build_codename -le "12" ]; then
+                if [ $build_codename -le "13" ]; then
                     setprop vendor.netflix.bsp_rev "Q4350-32962-1"
                 fi
                 ;;
@@ -103,7 +106,7 @@ case "$target" in
         ;;
     "msmnile")
         setprop vendor.media.target_variant "_msmnile"
-        if [ $product == "msmnile_gvmq" ]; then
+        if [ $product == "msmnile_gvmq" ] || [ $product == "msmnile_gvmgh" ]; then
             case "$soc_hwid" in
                 460)
                     setprop vendor.media.target_variant "_direwolf"
