@@ -43,7 +43,6 @@ ro.qcom.ims.use_moto_vt_ext=true
 arm64.memtag.process.system_server=off
 
 # Media
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 ro.media.recorder-max-base-layer-fps=60
 
 # Netmgrd
