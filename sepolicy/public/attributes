@@ -1,2 +1,3 @@
 hal_attribute_lineage(cameradesktop)
 hal_attribute_lineage(ifaa)
+hal_attribute_lineage(dms)
