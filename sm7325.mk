@@ -150,7 +150,6 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     init.qti.display_boot.rc \
-    init.qti.display_boot.sh \
     gralloc.default \
     libdisplayconfig.qti \
     libdisplayconfig.system.qti \
