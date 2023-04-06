@@ -150,6 +150,10 @@ on boot
     #Allow access to memory hotplug device attributes
     chown system system /sys/kernel/mem-offline/anon_migrate
 
+    # DC dimming
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dsi_display_dc
+    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dsi_display_dc
+
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
 
