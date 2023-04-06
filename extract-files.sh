@@ -66,6 +66,9 @@ function blob_fixup() {
         system_ext/etc/permissions/moto-telephony.xml)
             sed -i "s#/system/#/system_ext/#" "${2}"
             ;;
+        vendor/etc/dolby/dax-default.xml)
+            sed -i 's|volume-leveler-enable value="true"|volume-leveler-enable value="false"|g' "${2}"
+            ;;
         vendor/etc/vintf/manifest/vendor.dolby.media.c2@1.0-service.xml)
             sed -ni '/default1/!p' "${2}"
             ;;
