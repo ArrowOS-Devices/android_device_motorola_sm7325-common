@@ -101,17 +101,25 @@ PRODUCT_PACKAGES += \
     audio.primary.lahaina \
     audio.r_submix.default \
     audio.usb.default \
+    liba2dpoffload \
     libaudiopreprocessing \
+    libbatterylistener \
     libbundlewrapper \
+    libcomprcapture \
     libdownmix \
     libdynproc \
     libeffectproxy \
+    libexthwplugin \
+    libhdmiedid \
+    libhfp \
     libldnhncr \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libreverbwrapper \
+    libsndmonitor \
     libtinycompress \
     libvisualizer \
+    libvolumelistener \
     sound_trigger.primary.lahaina
 
 PRODUCT_COPY_FILES += \
@@ -421,12 +429,20 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
+    extphonelib \
+    extphonelib-product \
+    extphonelib.xml \
+    extphonelib_product.xml \
     ims-ext-common \
     ims_ext_common.xml \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
+    qti-telephony-hidl-wrapper-prd \
+    qti_telephony_hidl_wrapper_prd.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml \
+    qti-telephony-utils-prd \
+    qti_telephony_utils_prd.xml \
     telephony-ext
 
 PRODUCT_BOOT_JARS += \
