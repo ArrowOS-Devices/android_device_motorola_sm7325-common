@@ -353,7 +353,7 @@ vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
 
 # Dolby
--system/app/MotoDolbyDax3/MotoDolbyDax3.apk|10027ac6cb54ffbd2b4d2c16b0fe19c773417223
+-system/app/MotoDolbyDax3/MotoDolbyDax3.apk;OVERRIDES=MusicFX|10027ac6cb54ffbd2b4d2c16b0fe19c773417223
 system/etc/permissions/com.motorola.dolby.dolbyui.dax3.features.xml
 system/etc/permissions/com.motorola.frameworks.core.addon.xml
 system/etc/permissions/moto-checkin.xml
