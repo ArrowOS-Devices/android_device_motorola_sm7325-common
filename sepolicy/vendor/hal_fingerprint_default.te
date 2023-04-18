@@ -20,3 +20,5 @@ allow hal_fingerprint_default vendor_data_tzstorage_file:dir rw_dir_perms;
 allow hal_fingerprint_default vendor_data_tzstorage_file:file create_file_perms;
 
 binder_call(hal_fingerprint_default, hal_fingerprint_default)
+
+hal_client_domain(hal_fingerprint_default, hal_power)
