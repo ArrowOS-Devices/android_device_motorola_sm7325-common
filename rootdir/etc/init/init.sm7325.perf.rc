@@ -21,10 +21,6 @@ on property:vendor.post_boot.parsed=1
     write /dev/cpuset/restricted/cpus 0-3
     write /dev/cpuset/audio-app/cpus 1-2
 
-    # Configure CPU input boost
-    write /sys/devices/system/cpu/cpu_boost/input_boost_freq "0:1324800"
-    write /sys/devices/system/cpu/cpu_boost/input_boost_ms 150
-
     # Configure schedutil ratelimits
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 500
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 20000
@@ -38,6 +34,9 @@ on property:vendor.post_boot.parsed=1
     write /proc/sys/kernel/sched_downmigrate "60 75"
     write /proc/sys/kernel/sched_group_upmigrate 95
     write /proc/sys/kernel/sched_group_downmigrate 75
+    write /proc/sys/kernel/sched_prefer_spread 2
+    write /proc/sys/kernel/walt_low_latency_task_threshold 100
+    write /proc/sys/kernel/walt_rtg_cfs_boost_prio 119
 
     # Configure uclamp
     write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
