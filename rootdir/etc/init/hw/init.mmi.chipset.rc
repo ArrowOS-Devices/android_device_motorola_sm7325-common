@@ -29,3 +29,5 @@ on charger && property:ro.boot.bm_ulog_enabled=1
 on property:sys.boot_completed=1
     write /sys/devices/platform/soc/soc:mmi,charger/state_sync 1
 
+on property:dev.bootcomplete=1
+    stop llkd-${ro.debuggable:-0}

@@ -282,9 +282,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libavservices_minijail \
-    libavservices_minijail_vendor \
     libavservices_minijail.vendor \
-    libcodec2_hidl@1.1.vendor
+    libcodec2_hidl@1.1.vendor \
+    libcodec2_soft_common.vendor \
+    libsfplugin_ccodec_utils.vendor
 
 # MotoActions
 PRODUCT_PACKAGES += \
@@ -440,9 +441,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 
 # Thermal
 PRODUCT_PACKAGES += \
