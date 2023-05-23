@@ -439,3 +439,6 @@ service vendor.sensors-hal-2-1-multihal /vendor/bin/hw/android.hardware.sensors@
     writepid /dev/cpuset/system-background/tasks
     capabilities BLOCK_SUSPEND
     rlimit rtprio 10 10
+
+on property:ro.boot.revision=*
+    setprop ro.boot.hardware.revision ${ro.boot.revision}
