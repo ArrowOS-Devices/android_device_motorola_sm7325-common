@@ -26,7 +26,6 @@ persist.vendor.audio.speaker.stereo=false
 persist.vendor.audio.spv4.enable=true
 persist.vendor.audio.vbat.enabled=false
 persist.vendor.audio.voicecall.speaker.stereo=false
-persist.vendor.audio_fx.current=dolby
 ro.audio.monitorRotation=true
 ro.vendor.audio.sdk.fluence.nn.enabled=true
 ro.vendor.audio.sdk.fluencetype=none
@@ -177,9 +176,6 @@ vendor.display.enable_hdr10_gpu_target=1
 vendor.display.enable_optimize_refresh=1
 vendor.display.hwc_disable_hdr=0
 vendor.display.use_smooth_motion=1
-
-# Dolby
-ro.vendor.dolby.dax.version=DAX3_3.8.5.20_r1
 
 # DPM
 persist.vendor.dpm.feature=1
