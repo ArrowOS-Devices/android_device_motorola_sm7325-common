@@ -133,6 +133,17 @@ vendor/lib/libcdsprpc.so
 vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
 
+# Camera
+product/app/MotCamera3AI/MotCamera3AI.apk;PRESIGNED
+product/etc/init/init.motcamera3.lens.rc
+product/etc/permissions/com.motorola.camera3.xml
+product/etc/permissions/com.motorola.camera3.content.ai.xml
+product/etc/permissions/com.motorola.camera3.lens.xml
+product/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml
+product/etc/permissions/privapp-permissions-com.motorola.camera3.xml
+product/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera3.xml
+product/priv-app/MotCamera4/MotCamera4.apk;OVERRIDES=Aperture,Camera2;PRESIGNED
+
 # Charger
 vendor/bin/charge_only_mode
 vendor/bin/hvdcp_opti
@@ -508,6 +519,19 @@ vendor/lib64/libqcodec2_utils.so
 vendor/lib64/libqcodec2_v4l2codec.so
 
 # OEM
+-system/app/MotoSignatureApp/MotoSignatureApp.apk;PRESIGNED
+system/etc/permissions/com.motorola.frameworks.core.addon.xml
+system/etc/permissions/com.motorola.motosignature.xml
+system/etc/permissions/moto-checkin.xml
+system/etc/permissions/moto-core_services.xml
+system/etc/permissions/moto-settings.xml
+system/framework/com.motorola.frameworks.core.addon.jar
+system/framework/com.motorola.motosignature.jar
+system/framework/moto-checkin.jar
+system/framework/moto-core_services.jar
+system/framework/moto-settings.jar
+system_ext/bin/motsettings
+-system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk
 vendor/bin/motobox
 
 # OMX
