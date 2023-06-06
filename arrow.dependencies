@@ -4,7 +4,8 @@
     "target_path": "hardware/motorola"
   },
   {
-    "repository": "android_vendor_motorola_sm7325-common",
+    "remote": "arrow-gitlab",
+    "repository": "ArrowOS-Devices/proprietary_vendor_motorola_sm7325-common",
     "target_path": "vendor/motorola/sm7325-common"
   }
 ]
