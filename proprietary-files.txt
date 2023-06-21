@@ -649,9 +649,11 @@ product/etc/permissions/UimService.xml
 product/framework/uimgbalibrary.jar
 product/framework/uimgbamanagerlibrary.jar
 product/framework/uimservicelibrary.jar
+system/etc/permissions/moto-telephony.xml:system_ext/etc/permissions/moto-telephony.xml
 system/etc/permissions/privapp-permissions-qti.xml
 system/etc/sysconfig/qti_whitelist.xml
--system_ext/app/QtiTelephony/QtiTelephony.apk
+system/framework/moto-telephony.jar:system_ext/framework/moto-telephony.jar
+-system_ext/app/QtiTelephony/QtiTelephony.apk|14c588bb8a43f0772c0a534e922019541010f42f
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_libpermissions.xml
@@ -659,7 +661,9 @@ system_ext/etc/permissions/qti_permissions.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml
+system_ext/framework/qcom-moto-telephony-ext.jar|d95f7db286d6ccbbbc72664b034778d15455f769
 system_ext/framework/qcrilhook.jar
+system_ext/framework/qti-telephony-common.jar|c2a909aa81123e047fb1a7acfa80e5d13b35d0d0
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -vendor/app/IWlanService/IWlanService.apk
 vendor/bin/ATFWD-daemon
@@ -809,11 +813,10 @@ vendor/bin/netmgrd|85718e6eac96b393848a4c70f3dc31acbb2f4374
 
 # RIL - IMS
 system/etc/permissions/moto-ims-ext.xml:system_ext/etc/permissions/moto-ims-ext.xml
-system/etc/permissions/moto-telephony.xml:system_ext/etc/permissions/moto-telephony.xml
 system/framework/moto-ims-ext.jar:system_ext/framework/moto-ims-ext.jar
-system/framework/moto-telephony.jar:system_ext/framework/moto-telephony.jar
 -system_ext/app/ImsRcsService/ImsRcsService.apk
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
+system_ext/framework/qcom-moto-ims-ext.jar
 system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar
 system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar
